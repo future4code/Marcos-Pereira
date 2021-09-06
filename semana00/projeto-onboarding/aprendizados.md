@@ -1,0 +1,2 @@
+# Aprendizados da semana
+Nessa primeira semana na **Labenu**, aprendi a mexer no terminal, a fazer a integração com o Github e que ainda tenho pique para estudar mesmo depois de um dia cansativo de trabalho.
