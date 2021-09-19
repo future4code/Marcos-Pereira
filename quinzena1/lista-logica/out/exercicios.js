@@ -126,5 +126,6 @@ function checaValidadeInscricaoLabenu() {
   const disponibilidade = prompt("Você possui disponibilidade exclusiva durante os horários do curso?") === "sim"
 
   const resultado = idadeUsuario && escolaridade && disponibilidade
+  
   console.log(resultado)
 }
