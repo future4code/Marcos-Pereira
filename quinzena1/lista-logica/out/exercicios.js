@@ -121,6 +121,7 @@ function checaAnoBissexto() {
 
 // Exercício 12
 function checaValidadeInscricaoLabenu() {
+<<<<<<< HEAD
   const idadeUsuario = prompt("Você tem mais de 18 anos?")
   const escolaridade = prompt("Você possui ensino médio completo?")
   const disponibilidade = prompt("Você possui disponibilidade exclusiva durante os horários do curso?")
@@ -132,3 +133,12 @@ function checaValidadeInscricaoLabenu() {
   console.log(resultado)
 }
 //falta finalizar esse exercício
+=======
+  const idadeUsuario = prompt("Você tem mais de 18 anos?") === "sim"
+  const escolaridade = prompt("Você possui ensino médio completo?") === "sim"
+  const disponibilidade = prompt("Você possui disponibilidade exclusiva durante os horários do curso?") === "sim"
+
+  const resultado = idadeUsuario && escolaridade && disponibilidade
+  console.log(resultado)
+}
+>>>>>>> 17ad9887500478a7169e8d93e7fbdc67ef913be1
