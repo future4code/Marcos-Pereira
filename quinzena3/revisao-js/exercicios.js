@@ -54,12 +54,21 @@ function retornaQuantidadeElementos(array) {
 
 // EXERCÍCIO 06
 function retornaExpressoesBooleanas() {
-
+  
 }
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
+  const numerosPares = []
+  let par = 0
+  let i = 0
 
+  while(i < n){
+    i++
+    numerosPares.push(par)
+    par = par + 2
+  }
+  return numerosPares
 }
 
 // EXERCÍCIO 08
