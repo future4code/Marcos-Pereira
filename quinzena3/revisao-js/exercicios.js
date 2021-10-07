@@ -66,14 +66,12 @@ function retornaExpressoesBooleanas() {
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
-  const numerosPares = []
-  let par = 0
-  let i = 0
+  let numerosPares = []
 
-  while(i < n){
-    i++
-    numerosPares.push(par)
-    par = par + 2
+  for(let i = 0; numerosPares.length < n; i++){
+    if(i % 2 === 0){
+      numerosPares.push(i)
+    }
   }
   return numerosPares
 }
@@ -124,7 +122,10 @@ function imprimeChamada() {
 
 // EXERCÍCIO 14
 function criaRetangulo(lado1, lado2) {
+  const perimetro = 2 * (lado1 + lado2)
+  const area = lado1 * lado2
 
+  return {"largura": lado1, "altura": lado2, "perimetro": perimetro, "area": area}
 }
 
 // EXERCÍCIO 15
