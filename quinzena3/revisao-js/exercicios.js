@@ -153,7 +153,7 @@ function ordenaArray(array) {
     }
   }
   return array
-}
+} 
 
 // EXERCÍCIO 12
 function filmeFavorito() {
