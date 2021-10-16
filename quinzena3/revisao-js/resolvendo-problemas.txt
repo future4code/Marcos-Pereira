@@ -1,0 +1,15 @@
+Primeiro passo é ler o enunciado com atenção e ter certeza de que entendeu todas as informações;
+
+O segundo passo é retirar informações relevantes do enunciado, como palavras-chave que podem ser utilizadas no código;
+
+O terceiro passo é pensar em exemplos de entradas e quais saídas elas podem produzir;
+
+O quarto passo é fazer um esquema visual, como um fluxograma, para tentar entender melhor o caminho para chegar à resolução do problema;
+
+O quinto passso é escrever um código que resolva o problema sem pensar muito em ser um código limpo;
+
+O sexto passo é testar e ter certeza que o código funciona;
+
+E por fim é refatorar o código, pensar se é possível melhorar e ser um código mais limpo.
+
+Acredito que isso nos ajuda a ser mais organizados e pensar de forma mais clara na solução dos problemas.
