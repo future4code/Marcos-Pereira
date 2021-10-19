@@ -107,9 +107,8 @@ div:last-child {
 table {
     width: 60%;
     text-align: center;
-    /* margin-right: auto;
-    margin-left: auto; 
-    exercício 11 adicionei as margins*/
+    margin-right: auto;
+    margin-left: auto;
 }
 
 td button {
@@ -137,7 +136,12 @@ td button {
 }
 
 #back-button:hover {
-    background-color: #635a3d
+    background-color: #635a3d;
+}
+
+.botao-voltar {
+    text-align: center;
+    margin-top: 150px;
 }
 
 .icone {
