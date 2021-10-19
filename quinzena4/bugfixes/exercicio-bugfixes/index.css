@@ -7,6 +7,8 @@
 * {
     margin: 0;
     padding: 0;
+    /* font-family: 'Roboto', sans-serif;
+    exercício 10 adicionei essa fonte e 3 links no head */
 }
 
 h2 {
@@ -28,6 +30,7 @@ button:focus {
 img {
     width: 100px;
 }
+/* exercício 6, alterei o tamanho das imagens para 50px */
 
 div>p:first-child {
     display: inline;
@@ -69,6 +72,10 @@ div img {
   *
   **/
 
+.container>p {
+    width: 200px;
+}
+
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
@@ -90,6 +97,7 @@ div img {
 }
 
 
+
 /**
   *
   *  ESTILOS COMPRAR 
@@ -103,6 +111,11 @@ div:last-child {
 
 table {
     width: 60%;
+    /*text-align: center; 
+    exercício 5 adicionei esse text align*/
+    /* margin-right: auto;
+    margin-left: auto; 
+    exercício 11 adicionei as margins*/
 }
 
 td button {
@@ -132,3 +145,21 @@ td button {
 #back-button:hover {
     background-color: #635a3d
 }
+
+/* .icone {
+    width: 25px;
+} 
+exercício 7 - adicionei o caminho da imagem e .icone*/
+
+/* td button:hover {
+    background-color: #d3bb53;
+}
+exercício 8, adicionei toda essa parte */
+
+/* input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid;
+}
+exercício 9, adicionei toda essa parte */
