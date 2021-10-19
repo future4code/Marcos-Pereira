@@ -72,9 +72,6 @@ div img {
   *
   **/
 
-.container>p {
-    width: 200px;
-}
 
 #container-de-descricao {
     background-color: #2274a5;
@@ -111,8 +108,7 @@ div:last-child {
 
 table {
     width: 60%;
-    /*text-align: center; 
-    exercício 5 adicionei esse text align*/
+    text-align: center;
     /* margin-right: auto;
     margin-left: auto; 
     exercício 11 adicionei as margins*/
