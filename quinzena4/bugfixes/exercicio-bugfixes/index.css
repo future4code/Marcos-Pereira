@@ -30,7 +30,6 @@ button:focus {
 img {
     width: 50px;
 }
-/* exercício 6, alterei o tamanho das imagens para 50px */
 
 div>p:first-child {
     display: inline;
@@ -142,10 +141,9 @@ td button {
     background-color: #635a3d
 }
 
-/* .icone {
+.icone {
     width: 25px;
-} 
-exercício 7 - adicionei o caminho da imagem e .icone*/
+}
 
 /* td button:hover {
     background-color: #d3bb53;
