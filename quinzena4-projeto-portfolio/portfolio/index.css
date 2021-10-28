@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+}
+
+.container {
+    background-image: url(imagens/eb97bea9da8e538fcb507943d6a64030.jpg);
+    height: 500px;
+    color: rgba(236, 230, 230, .877);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 100px;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+    display: flex;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: rgba(236, 230, 230, .877);
+    padding: 15px 60px;
+    border: 1px solid black;
+    min-width: 60px;
+
+}
+
+a:hover {
+    background-color: rgb(236, 229, 229);
+    color: black;
+}
+
+a:active {
+    background-color: grey;
+    color: white;
+}
+
+.sobre-mim {
+    border: 2px solid;
+    border-radius: 5px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 400px; 
+    width: 600px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.sobre-mim h1, p, li {
+    max-width: 500px;   
+}
+
+.container-projeto {
+    background-image: url(imagens/eb97bea9da8e538fcb507943d6a64030.jpg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.container-projeto a {
+    color: white;
+}
+
+.container-projeto a:hover {
+    color: black;
+}
+
+.blackjack {
+    background-image: url(imagens/eb97bea9da8e538fcb507943d6a64030.jpg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    font-size: larger;
+}
+
+.imagem1, .imagem2{
+    width: 1000px;
+    margin: 20px;
+}
+
+.regras {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    margin: 20px;
+}
+h3 {
+    text-align: center;
+}
+
+.mensagem-contato {
+    width: 500px;
+    height: 400px;
+    background-color: cadetblue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+#mensagem {
+    height: 250px;
+    width: 250px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding: 20px;
+}
