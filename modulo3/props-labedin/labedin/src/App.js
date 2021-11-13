@@ -3,6 +3,21 @@ import './App.css';
 import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
 import CardPequeno from './components/CardPequeno';
+import foto from './components/img/Eu.jpg';
+import imgEmail from './components/img/email.png';
+import imgGps from './components/img/gps.png';
+import atento from './components/img/atento.jpg';
+import icesp from './components/img/icesp.jfif';
+import styled from 'styled-components';
+
+const BigCardContainer = styled.div`
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    height: 200px;
+`
 
 function App() {
   return (
@@ -10,7 +25,7 @@ function App() {
       <div className="page-section-container">
         <h2>Dados pessoais</h2>
         <CardGrande 
-          imagem={"https://uploads-ssl.webflow.com/5d640f4558306be99cf47a0e/5dd57846babb597b77c6bb1d_PerfilFuture4_cor.png"}
+          imagem={foto}
           nome="Marcos Vinicis Munarim Pereira" 
           descricao="Oi, eu sou o Marcos, aluno da Labenu no curso Web Full Stack."
         />
@@ -23,13 +38,15 @@ function App() {
 
       <div>
         <CardPequeno 
+        imagem={imgEmail}
         nome="E-mail: "
         descricao="marcosvmunarim@gmail.com"
         />
       </div>
 
       <div>
-        <CardPequeno 
+        <CardPequeno
+        imagem={imgGps}
         nome="Endereço: "
         descricao="São Paulo, São Paulo, Brasil"
         />
@@ -38,13 +55,13 @@ function App() {
       <div className="page-section-container">
         <h2>Experiências profissionais</h2>
         <CardGrande 
-          imagem="https://s3.amazonaws.com/future4.com.br/static/headf4-c492117ca2373dc85ca81bf715b3dc2a.png" 
+          imagem={atento} 
           nome="Atento Brasil" 
           descricao="Ajudo clientes pessoa jurídica do Bradesco à acessar e navegar nas contas de sua empresa." 
         />
         
         <CardGrande 
-          imagem="https://imagens.canaltech.com.br/empresas/4418.400.jpg" 
+          imagem={icesp} 
           nome="Instituto do Câncer do Estado de São Paulo" 
           descricao="Fazia o lançamento no sitema dos medicamentos recebidos pelos pacientes em tratamento de quimioterapia." 
         />

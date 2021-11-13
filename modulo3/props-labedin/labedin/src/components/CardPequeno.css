@@ -2,12 +2,12 @@
     display: flex;
     align-items: center;
     border: 1px solid black;
-    padding: 20px 10px;
+    padding: 10px 10px;
     margin-bottom: 10px;
+    width: 500px;
 }
 
 .smallcard-container > img {
-    width: 70px;
+    width: 30px;
     margin-right: 10px;
-    border-radius: 50%;
 }
