@@ -10,6 +10,7 @@ class TelaCriarPlaylists extends React.Component {
 
   mudaTextoInput = (event) => {
     this.setState({textoInput: event.target.value})
+    
   }
 
   CriarPlaylist = () => {
@@ -28,9 +29,11 @@ class TelaCriarPlaylists extends React.Component {
     .then((response) => {
       this.setState({textoInput:""})
       alert("Playlist Criada com sucesso!")
+      this.props.pegaPlaylists()
     })
     .catch((error) => {alert(error)})
   }
+  
   render(){
   return (
 
