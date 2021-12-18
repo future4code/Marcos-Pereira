@@ -1,9 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
 import axios from 'axios';
 import TelaCriarPlaylists from './Components/TelaCriarPlaylists';
 import TelaListaDePlaylists from './Components/TelaListaDePlaylists';
 import AdicionaMusica from './Components/AdicionaMusica';
+import styled from 'styled-components';
+
+const Container = styled.div`
+display: flex;
+justify-content: center; 
+align-items: center;
+flex-direction: column;
+height: 100vh;
+`
 
 class App extends React.Component {
   state  = {
@@ -42,12 +50,12 @@ class App extends React.Component {
     }
 
     return (
-      <div>
+      <Container>
         <TelaCriarPlaylists pegaPlaylists = {this.pegaPlaylists} />
         <br/><hr />
         <br/><button onClick={this.mudaCondicionalDeLista}>Mostrar/Esconder Playlists</button>
         {mostraLista}
-      </div>
+      </Container>
 
   );
   }

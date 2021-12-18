@@ -4,17 +4,14 @@ import styled from 'styled-components'
 
 class DetalhesPlay extends React.Component {
 
-  
-
     render() {
   
     return (
 
     <div>
-       Marcos
+       Detalhes
       </div>)
 }
-
 
 }
 

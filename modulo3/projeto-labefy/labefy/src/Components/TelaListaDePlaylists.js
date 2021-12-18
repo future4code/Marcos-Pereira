@@ -9,7 +9,8 @@ class TelaListaDePlaylists extends React.Component {
     state = {
         idPlaylist: '',
         mostraLista: false,
-        mostraDetalhe: false
+        mostraDetalhe: false,
+        infoplaylist: []
     }
 
        deletePlay = (id) => {
@@ -24,10 +25,10 @@ class TelaListaDePlaylists extends React.Component {
         )
         .then(() => {
           alert("Playlist apagada com sucesso!");
-          this.pegaPlaylists();
+          this.props.pegaPlaylists();
         })
         .catch((err) => {
-          // console.log(err.response.data)
+          console.log(err.message)
         })
       }
 
@@ -41,6 +42,25 @@ class TelaListaDePlaylists extends React.Component {
       this.state.mostraDetalhe
       ? this.setState({mostraDetalhe:false})
       : this.setState({mostraDetalhe:true})
+    }
+
+    getPlaylistinfo = (id) => {
+      
+      axios.get(
+        `https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${id}/tracks/`,
+        {
+          headers:{
+            Authorization: "marcos-munarim-joy"
+          }
+        }
+      )
+      .then((res) => {
+        this.setState({infoplaylist:res.data.result.tracks})
+          console.log(res.data.result.tracks)
+      })
+      .catch((err) => {
+        console.log(err.message)
+      })
     }
 
     render() {
@@ -59,12 +79,10 @@ class TelaListaDePlaylists extends React.Component {
     }
 
         let playListsMap = this.props.playlists.map((playlist)=>{
-            return <p> <strong> Nome:</strong> {playlist.name} <button onClick={() => this.deletePlay(playlist.id)}>APAGAR</button><br /> 
-              <button onClick={this.detalhesDaPlay}>Detalhes da Playlist</button> 
-              <button onClick={() => this.addMusica(playlist.id)}>Adicionar Música</button>
-             
-               
-            </p>
+            return <p> <strong> Nome:</strong> {playlist.name} <button onClick={() => this.deletePlay(playlist.id)}>Excluir Playlist</button><br /> 
+              <button onClick={() => this.getPlaylistinfo(playlist.id)}>Detalhes da Playlist</button> 
+              <button onClick={() => this.addMusica(playlist.id)}>Adicionar Música</button>   
+               </p>
         })
 
         return(

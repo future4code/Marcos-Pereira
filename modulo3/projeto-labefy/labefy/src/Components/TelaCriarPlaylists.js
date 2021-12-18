@@ -37,7 +37,6 @@ class TelaCriarPlaylists extends React.Component {
   render(){
   return (
 
-
      <div>
         <h3>Criar Playlist</h3>
         <div>
