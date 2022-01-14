@@ -5,9 +5,9 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 350px;
-
+  justify-content: space-around;
+  width: 100%;
+  
   button {
     width: 60px;
     height: 60px;
@@ -17,34 +17,31 @@ const Container = styled.div`
 `;
 const Imagem = styled.img`
   width: 200px;
+    
 `;
 const Carinhas = styled.img`
   width: 35px;
 `;
 
+const CardContainer = styled.div`
+width: 100%;
+
+`
 function Cabeca() {
   const [mudaTela, setmudaTela] = useState(false);
 
   return (
-    <div>
-      <div>
-        <Imagem src="/img/astromatch.jpeg" />
-      </div>
+    <CardContainer>
+    
+      <Container>
 
-      {mudaTela ? (
-        setmudaTela(
-          <Container>
-            <div>
-              <Carinhas src="/img/carinhas.jpeg" />
-            </div>
-          </Container>
-        )
-      ) : (
-        <div>
-          <Carinhas src="/img/carinhas.jpeg" />
-        </div>
-      )}
-    </div>
+        <Imagem src="/img/astromatch.jpeg" /> 
+        <Carinhas src="/img/carinhas.jpeg" />
+
+      </Container>
+
+      
+    </CardContainer>
   );
 }
 
