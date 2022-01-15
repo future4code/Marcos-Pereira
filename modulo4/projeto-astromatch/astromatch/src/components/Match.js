@@ -53,8 +53,8 @@ function Match() {
       </Box2>
         <p>{fotos.bio}</p>
         <p>{fotos.name} , {fotos.age} </p>
-        <button>X</button>
-        <button>V</button>
+        <button>Vô</button>
+        <button>Num vô</button>
     </Box>
   );
 }
