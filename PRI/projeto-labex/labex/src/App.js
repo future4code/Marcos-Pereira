@@ -7,6 +7,7 @@ import ListTripsPage from "./pages/ListTripsPage";
 import LoginPage from "./pages/LoginPage";
 import TripDetailsPage from "./pages/TripDetailsPage";
 import { BrowserRouter, Switch, Route } from "react-router-dom"
+import {GlobalStyles} from "./styles/global"
 
 
 function App() {
@@ -16,25 +17,26 @@ function App() {
         <Route exact path="/">
           <HomePage/>
         </Route>
-        <Route exact path="admin/trips/list">
-          <AdminHomePage />
+        <Route exact path="/admin/trips/create">
+          <CreateTripPage />
+        </Route>
+        <Route exact path="/admin/trips/list"> 
+          {<AdminHomePage />}
         </Route>
         <Route exact path="/trips/application">
           <ApplicationFormPage />
         </Route>
-        <Route exact path="/admin/trips/create">
-          <CreateTripPage />
+        <Route exact path="/admin/trips/:id">
+        <TripDetailsPage />          
         </Route>
         <Route exact path="/trips/list">
           <ListTripsPage />
         </Route>
         <Route exact path="/login">
           <LoginPage />
-        </Route>
-        <Route exact path="/admin/trips/:id">
-          <TripDetailsPage />
-        </Route>
+        </Route> 
       </Switch>
+      <GlobalStyles/>
     </BrowserRouter>
   );
 }

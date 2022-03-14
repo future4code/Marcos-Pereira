@@ -17,6 +17,8 @@ const AdminHomePage = () => {
     return (
         <FundoGeral>
             <Letras>AdminHomePage</Letras>
+            <button>Criar Viagem</button>
+            <button>Logout</button>
         </FundoGeral>
     )
 }
