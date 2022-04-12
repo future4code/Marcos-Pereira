@@ -1,0 +1,12 @@
+###
+POST http://localhost:3003/users
+Content-Type: application/json
+
+{
+    "nome": "Gabriela",
+    "CPF": 98765432100,
+    "nascimento": "06/04/1993"
+}
+
+###
+GET http://localhost:3003/users
