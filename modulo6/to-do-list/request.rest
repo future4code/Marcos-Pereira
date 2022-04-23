@@ -1,0 +1,14 @@
+// para requisições com body:
+// Content-Type: application/json
+// pula 1 linha
+//{}
+
+###
+POST http://localhost:3306/user
+Content-Type: application/json
+
+{
+	"name": "Astro Dev",
+	"nickname": "astrodev",
+	"email": "astro@dev.com"
+}
