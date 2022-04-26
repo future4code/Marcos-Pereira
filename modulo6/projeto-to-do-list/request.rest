@@ -1,0 +1,20 @@
+// Para requisições com body:
+// Content-Type: application/json
+// Pula 1 linha
+// {}
+
+// Para requisições com headers:
+// Authorization: "token"
+
+###
+POST http://localhost:3306/user
+Content-Type: application/json
+
+{
+	"name": "Astro Dev",
+	"nickname": "astrodev",
+	"email": "astro@dev.com"
+}
+
+###
+GET http://localhost:3306/user/
