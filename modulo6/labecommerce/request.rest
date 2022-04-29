@@ -1,0 +1,9 @@
+// Para requisições com body:
+// Content-Type: application/json
+// Pula 1 linha
+// {}
+
+// Para requisições com headers:
+// Authorization: "token"
+
+###
