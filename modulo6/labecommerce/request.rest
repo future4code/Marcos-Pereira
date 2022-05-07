@@ -1,9 +1,25 @@
-// Para requisições com body:
-// Content-Type: application/json
-// Pula 1 linha
-// {}
+###
+POST  http://localhost:3003/users
+Content-Type: application/json
 
-// Para requisições com headers:
-// Authorization: "token"
+{
+    "name": "",
+    "email": "",
+    "password": ""
+}
 
 ###
+GET http://localhost:3003/users
+
+###
+POST http://localhost:3003/products
+Content-Type: application/json
+
+{
+    "name": "",
+    "price": ,
+    "image_url": ""
+}
+
+###
+GET http://localhost:3003/products
