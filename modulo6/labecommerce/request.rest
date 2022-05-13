@@ -1,0 +1,25 @@
+###
+POST  http://localhost:3003/users
+Content-Type: application/json
+
+{
+    "name": "",
+    "email": "",
+    "password": ""
+}
+
+###
+GET http://localhost:3003/users
+
+###
+POST http://localhost:3003/products
+Content-Type: application/json
+
+{
+    "name": "",
+    "price": ,
+    "image_url": ""
+}
+
+###
+GET http://localhost:3003/products
