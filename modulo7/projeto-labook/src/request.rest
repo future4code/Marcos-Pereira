@@ -1,0 +1,38 @@
+POST http://localhost:3003/user/create
+Content-Type: application/json
+
+{
+	"name":"Gabriela Silva",
+	"email":"gabisilva@email.com",
+	"password":"87654321"
+}
+
+###
+POST http://localhost:3003/post/create/
+Content-Type: application/json
+
+{
+	"photo":"https://cdn.pixabay.com/photo/2022/03/08/07/08/water-7055153_1280.jpg",
+	"description":"Onda no mar",
+	"type":"normal",
+	"created_at":"2022-06-10 22:27:00",
+	"author_id":"d88c7094-c587-49b8-a6e6-e849a0c5754b"
+}
+
+###
+GET http://localhost:3003/post/get/d88c7094-c587-49b8-a6e6-e849a0c5754b
+
+###
+POST http://localhost:3003/user/createFriendship
+Content-Type: application/json
+
+{
+	"user_id":"d88c7094-c587-49b8-a6e6-e849a0c5754b",
+	"friend_id":"773f8d6c-dde4-4762-8746-252602509f72"
+}
+
+###
+DELETE http://localhost:3003/user/deleteFriendship/id
+
+###
+GET http://localhost:3003/user/feed
