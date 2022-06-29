@@ -1,0 +1,28 @@
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+	"name":"Marcos",
+	"email":"marcosvini@email.com",
+	"password":"123456"
+}
+
+###
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+	"email":"marcosvin@email.com",
+	"password":"123456"
+}
+
+###
+POST http://localhost:3003/recipe/create
+Content-Type: application/json
+
+{
+	"title":"Receita teste",
+	"description":"Ingredientes",
+	"createdAt":"2022-06-23 22:14:00"
+}
