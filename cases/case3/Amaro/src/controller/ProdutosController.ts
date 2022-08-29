@@ -52,7 +52,7 @@ export class ProdutosController {
 
       res.status(201).send({
         message:
-          "Produto adicionado com sucesso! O preço de venda será calculado automaticamente",
+          "Produto adicionado com sucesso!",
       });
     } catch (error: any) {
       res.status(400).send(error.sqlMessage || error.message);
